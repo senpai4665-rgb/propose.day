@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Payal ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#000;
+    color:white;
+    overflow-x:hidden;
+}
+
+section{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+}
+
+.page1{background:linear-gradient(120deg,#ff758c,#ff7eb3);}
+.page2{background:linear-gradient(120deg,#1f1c2c,#928dab);}
+.page3{background:linear-gradient(120deg,#141e30,#243b55);}
+.page4{background:linear-gradient(120deg,#41295a,#2F0743);}
+.page5{background:radial-gradient(circle,#ff4b6e,#000);}
+
+.card{
+    max-width:460px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(16px);
+    border-radius:25px;
+    padding:38px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.4);
+    animation:fadeUp 1.8s ease;
+}
+
+@keyframes fadeUp{
+    from{opacity:0;transform:translateY(40px)}
+    to{opacity:1;transform:translateY(0)}
+}
+
+h1,h2{
+    font-family:'Playfair Display',serif;
+    margin-bottom:15px;
+}
+
+h1{font-size:34px}
+h2{font-size:28px}
+
+p{
+    font-size:16px;
+    line-height:1.9;
+}
+
+.heart{
+    font-size:60px;
+    animation:beat 1.5s infinite;
+    margin-bottom:10px;
+}
+
+@keyframes beat{
+    0%,100%{transform:scale(1)}
+    50%{transform:scale(1.25)}
+}
+
+.btn{
+    display:inline-block;
+    margin:15px 10px 0;
+    padding:14px 34px;
+    border-radius:40px;
+    background:linear-gradient(135deg,#ff4b6e,#ff758c);
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    border:none;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+.btn:hover{transform:scale(1.1)}
+
+.buttons{margin-top:25px}
+
+.hearts span{
+    position:absolute;
+    bottom:-10vh;
+    font-size:22px;
+    animation:float 7s linear infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(0) scale(0.6);opacity:0}
+    50%{opacity:1}
+    100%{transform:translateY(-110vh) scale(1.2);opacity:0}
+}
+
+#fireworks{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 MUSIC (NO AUTOPLAY) -->
+<iframe id="music" width="0" height="0"
+src="https://www.youtube.com/embed/2Vv-BfVoq4g?enablejsapi=1"
+allow="autoplay; encrypted-media">
+</iframe>
+
+<!-- PAGE 1 -->
+<section class="page1">
+    <div class="card">
+        <div class="heart">❤️</div>
+        <h1>Payal</h1>
+        <p>
+            This is not just a website…<br>
+            It’s my heart speaking to you 💖✨
+        </p>
+        <a href="#page2" class="btn" onclick="startMusic()">Begin Our Story 💫</a>
+    </div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page2" id="page2">
+    <div class="card">
+        <h2>How It Started 💞</h2>
+        <p>
+            I never planned to fall in love…<br>
+            But between our talks, laughter & silence — I did 🥺❤️
+        </p>
+        <a href="#page3" class="btn">Next ✨</a>
+    </div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page3" id="page3">
+    <div class="card">
+        <h2>What You Are To Me 💗</h2>
+        <p>
+            "You're not someone I want to be with,<br>
+            you are someone I can't be without.<br>
+            Stay in my life forever." 🫶
+        </p>
+        <a href="#page4" class="btn">Keep Reading 💌</a>
+    </div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page4" id="page4">
+    <div class="card">
+        <h2>My Heart Knows 💖</h2>
+        <p>
+            From the moment you came into my life, everything started feeling warmer, calmer, and more meaningful.  
+            You are not just someone I love, you are someone who understands me, supports me, and makes me want to become a better person every single day.  
+            Your smile gives me strength 😊, your words give me peace 🕊️, and your presence makes my world feel complete 🌍❤️  
+            On this Propose Day, my heart chose you — not for a moment, but for a lifetime 💫  
+            Will you continue walking this beautiful journey of life with me? 💍✨
+        </p>
+        <a href="#page5" class="btn">One Last Thing 💍</a>
+    </div>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page5" id="page5">
+    <div class="card">
+        <div class="heart">💍</div>
+        <h2>Payal 💖</h2>
+        <p><b>Will you marry me?</b> 🥺❤️✨</p>
+
+        <div class="buttons">
+            <button class="btn" onclick="yesClicked()">Yes 💖💍✨</button>
+            <button class="btn" id="noBtn">No 🙈</button>
+        </div>
+    </div>
+</section>
+
+<!-- Floating hearts -->
+<div class="hearts">
+    <span style="left:10%">❤️</span>
+    <span style="left:30%">💖</span>
+    <span style="left:50%">💘</span>
+    <span style="left:70%">💗</span>
+    <span style="left:90%">❤️</span>
+</div>
+
+<canvas id="fireworks"></canvas>
+
+<script>
+/* 🎵 START MUSIC AFTER PAGE 1 CLICK */
+function startMusic(){
+    const iframe=document.getElementById("music");
+    if(!iframe.src.includes("autoplay")){
+        iframe.src += "&autoplay=1";
+    }
+}
+
+/* 🙈 NO BUTTON DODGE */
+const noBtn=document.getElementById("noBtn");
+noBtn.addEventListener("mouseover",moveNo);
+noBtn.addEventListener("touchstart",moveNo);
+
+function moveNo(){
+    noBtn.style.transform =
+        `translate(${Math.random()*200-100}px,${Math.random()*200-100}px)`;
+}
+
+/* 🎆 FIREWORKS */
+const canvas=document.getElementById("fireworks");
+const ctx=canvas.getContext("2d");
+canvas.width=innerWidth;
+canvas.height=innerHeight;
+let particles=[];
+
+function burst(){
+    for(let i=0;i<60;i++){
+        particles.push({
+            x:Math.random()*canvas.width,
+            y:Math.random()*canvas.height/2,
+            dx:(Math.random()-0.5)*6,
+            dy:(Math.random()-0.5)*6,
+            life:80
+        });
+    }
+}
+
+function animate(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    particles.forEach((p,i)=>{
+        p.x+=p.dx;
+        p.y+=p.dy;
+        p.life--;
+        ctx.fillStyle="pink";
+        ctx.fillRect(p.x,p.y,3,3);
+        if(p.life<=0)particles.splice(i,1);
+    });
+    requestAnimationFrame(animate);
+}
+animate();
+
+/* 💖 YES CLICK */
+function yesClicked(){
+    for(let i=0;i<5;i++) setTimeout(burst,i*300);
+    setTimeout(()=>{
+        alert("YAYYYY!!! 💖💍🎉✨\n\nYou just made me the happiest person alive 😭❤️\nForever starts now 💫🫶");
+    },700);
+}
+</script>
+
+</body>
+  </html>
